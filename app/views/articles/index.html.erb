@@ -1,0 +1,7 @@
+<h3 class = "mx-auto">Here are all the articles</h3>
+<div class = "m-5 mx-auto" style="width: 700px;">
+<% @articles.each do |article| %>
+    <h3><%= link_to article.title, article_path(article) %></h3>
+    <p><%= article.content %></p>
+<%end%>
+</div>

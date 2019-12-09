@@ -1,0 +1,10 @@
+<h1>Add post</h1>
+<div class = 'm-5'>
+<%= form_for(@article) do |f| %>
+    <%=f.text_field(:title, {:class => 'form-control'}) %>
+    <%=f.label :content%>
+    <%=f.text_area(:content,  {:class => 'form-control'})%>
+    <%= f.submit({:class => 'btn btn-primary mt-5'})%>
+<%end%>
+</div>
+
